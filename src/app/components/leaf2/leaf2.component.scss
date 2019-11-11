@@ -7,3 +7,6 @@ p {
 :host {
   display: inline-block;
 }
+:host(.active p) {
+  background: yellow;
+}

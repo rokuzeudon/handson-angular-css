@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwigComponent implements OnInit {
 
+  activeLeaf = null;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  activate(no: number) {
+    this.activeLeaf = no;
+  }
+
+  isActive(no: number) {
+    return no === this.activeLeaf;
   }
 
 }
